@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="rb" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find rb_description)/urdf/rb_description.urdf.xacro" />
+    <xacro:include filename="$(find rb_description)/urdf/rb_materials.xacro" />
+    <xacro:include filename="$(find rb_description)/urdf/rb_control.xacro" />
+</robot>
+    

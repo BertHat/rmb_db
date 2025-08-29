@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<robot name="rb" xmlns:xacro="http://www.ros.org/wiki/xacro">
+   <xacro:property name="mesh_pad" value="package://rb_description/meshes"/>
+
+
+  <link
+    name="base_link"> 
+    
+    <inertial>
+      <origin
+        xyz="-0.0181147900028046 -0.000117721447916085 0.0597783330001523"
+        rpy="0 0 0" />
+
+      <mass
+        value="0.581050060115322" />
+      <inertia
+        ixx="0.000787643895462601"
+        ixy="3.9318235716562E-05"
+        ixz="1.53524006932844E-05"
+        iyy="0.000695109650373384"
+        iyz="-2.88717442711591E-06"
+        izz="0.00123733570655226" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>   
+        <mesh         
+          filename="${mesh_pad}/base_link_breed.STL"/>
+      </geometry>
+      <material
+        name="light_blue">       
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh         
+          filename="${mesh_pad}/base_link_breed.STL"/> 
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="-4.43596107001888E-08 0.000306298431982932 -4.43596107138622E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0114233846164164" />
+      <inertia
+        ixx="3.14494412193803E-06"
+        ixy="1.06853383906925E-12"
+        ixz="-3.49624861072961E-08"
+        iyy="6.15298743815374E-06"
+        iyz="1.06853368442335E-12"
+        izz="3.07694609922223E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>     <!-- Frictiecoëfficiënt 1 (primair, vaak de rolrichting) -->
+            <mu2>1.0</mu2>    <!-- Frictiecoëfficiënt 2 (secundair, vaak zijwaartse grip) -->
+            <slip1>0.0</slip1> <!-- Hoeveelheid slip voordat mu1 wordt toegepast -->
+            <slip2>0.0</slip2> <!-- Hoeveelheid slip voordat mu2 wordt toegepast -->
+          </ode>
+        </friction>
+      </surface>
+      <geometry>
+           <mesh         
+             filename="${mesh_pad}/wiel_links.STL"/>         
+      </geometry>
+      <material
+        name="black">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+           <mesh         
+             filename="${mesh_pad}/wiel_links.STL"/>         
+      </geometry>
+
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.3</mu>   <!-- Frictiecoëfficiënt voor de primaire richting -->
+            <mu2>0.3</mu2>  <!-- Frictiecoëfficiënt voor de zijwaartse richting -->
+          </ode>
+        </friction>
+      </surface>
+      <material name="black"/>
+
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0917 0.0290000000000011"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+    <dynamics damping="0.2"/>
+    <limit
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="-5.70916803542524E-08 0.000306298431982974 2.60017337348761E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0114233846164164" />
+      <inertia
+        ixx="3.06234633494442E-06"
+        ixy="1.37522607578741E-12"
+        ixz="4.05798164790742E-09"
+        iyy="6.15298743815288E-06"
+        iyz="-6.2632801175412E-13"
+        izz="3.15954388620994E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+
+    
+      <geometry>
+
+        <mesh         
+             filename="${mesh_pad}/wiel_rechts.STL"/> 
+
+      </geometry>
+      <material
+        name="black">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+
+      <geometry>
+
+       <mesh         
+             filename="${mesh_pad}/wiel_rechts.STL"/> 
+
+      </geometry>
+
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.3</mu>   <!-- Frictiecoëfficiënt voor de primaire richting -->
+            <mu2>0.3</mu2>  <!-- Frictiecoëfficiënt voor de zijwaartse richting -->
+          </ode>
+        </friction>
+      </surface>
+
+      <material name="black"/>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0917 0.0289999999999974"
+      rpy="3.14159265358979 0 3.14159265358979" />
+    <parent
+      link="base_link"/>
+    <child
+      link="right_wheel"/>
+    <axis
+      xyz="0 1 0" />
+    <dynamics damping="0.2"/>
+    <limit
+      effort="100"
+      velocity="10" />
+  </joint>
+  
+
+     <!-- Caster Rear Wheel - Ball Joint Simulation -->
+  <link name="caster_rear_base_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_rear_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_rear_base_link"/>
+    <origin xyz="-0.072 0 0.00799999999999996" rpy="0 0 0" />
+  </joint>
+
+  <link name="caster_rear_pitch_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_rear_pitch_joint" type="continuous">
+    <parent link="caster_rear_base_link"/>
+    <child link="caster_rear_pitch_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="caster_rear_roll_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_rear_roll_joint" type="continuous">
+    <parent link="caster_rear_pitch_link"/>
+    <child link="caster_rear_roll_link"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="caster_rear_wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.00527071785332891" />
+      <inertia ixx="1.3493037704522E-07" ixy="-1.96365554706277E-23" ixz="5.18319503117408E-25" iyy="1.3493037704522E-07" iyz="-1.60258791489248E-24" izz="1.3493037704522E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_pad}/kogel_caster_achter.STL"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_pad}/kogel_caster_achter.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="caster_rear_wheel_joint" type="continuous">
+    <parent link="caster_rear_roll_link"/>
+    <child link="caster_rear_wheel"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Caster Frontal Wheel - Ball Joint Simulation -->
+  <link name="caster_frontal_base_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_frontal_base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_frontal_base_link"/>
+    <origin xyz="0.0678795409988577 -0.0389917174306028 0.00899999999999995" rpy="0 0 0" />
+  </joint>
+
+  <link name="caster_frontal_pitch_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_frontal_pitch_joint" type="continuous">
+    <parent link="caster_frontal_base_link"/>
+    <child link="caster_frontal_pitch_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="caster_frontal_roll_link">
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="caster_frontal_roll_joint" type="continuous">
+    <parent link="caster_frontal_pitch_link"/>
+    <child link="caster_frontal_roll_link"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="caster_frontal_wheel">
+    <inertial>
+      <origin xyz="0 -6.93889390390723E-18 0" rpy="0 0 0" />
+      <mass value="0.00527071785332891" />
+      <inertia ixx="1.3493037704522E-07" ixy="2.75141123485326E-24" ixz="2.05551979830019E-24" iyy="1.3493037704522E-07" iyz="-4.68421795235189E-24" izz="1.3493037704522E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_pad}/kogel_caster_voor.STL"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_pad}/kogel_caster_voor.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="caster_frontal_wheel_joint" type="continuous">
+    <parent link="caster_frontal_roll_link"/>
+    <child link="caster_frontal_wheel"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+   <link
+    name="lidar">
+    <inertial>
+      <origin
+        xyz="0.000636141264708893 9.48198117245447E-11 -0.0133371667906251"
+        rpy="0 0 0" />
+      <mass
+        value="0.155359864317351" />
+      <inertia
+        ixx="6.90898600899627E-05"
+        ixy="2.43754560366207E-11"
+        ixz="-6.52087642179709E-07"
+        iyy="6.83728609157143E-05"
+        iyz="-1.63753039609325E-11"
+        izz="9.99149364657577E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+         <mesh         
+             filename="${mesh_pad}/lidar.STL"/>
+      </geometry>
+      <material
+        name="black">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+
+        <mesh         
+             filename="${mesh_pad}/lidar.STL"/>
+
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.05215 0 0.0932667954832934"
+      rpy="0 0 -0.78539816339745" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar" />
+  </joint>
+   <link
+    name="bovenwagen">
+    <inertial>
+      <origin
+        xyz="4.41189853024696E-06 0.003070014431632 0.0269753133635099"
+        rpy="0 0 0" />
+      <mass
+        value="0.0540348291844959" />
+      <inertia
+        ixx="1.1298842751104E-05"
+        ixy="-5.41780519534696E-09"
+        ixz="-5.46096018571379E-09"
+        iyy="1.06191226036415E-05"
+        iyz="-2.00017445791757E-08"
+        izz="6.9874376864937E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/bovenwagen.STL" />
+      </geometry>
+      <material
+        name="green">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/bovenwagen.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bovenwagen_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.165799999986961"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bovenwagen" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.5172"
+      upper="1.853"
+      effort="1.4"
+      velocity="12" />
+  </joint>
+  <link
+    name="giek">
+    <inertial>
+      <origin
+        xyz="4.57298817098242E-05 0.00342923282393403 0.0918082774153144"
+        rpy="0 0 0" />
+      <mass
+        value="0.0588357622381149" />
+      <inertia
+        ixx="1.91758400357288E-05"
+        ixy="-7.906244701865E-09"
+        ixz="-6.68486714342647E-08"
+        iyy="1.6822823745648E-05"
+        iyz="4.86627518904173E-07"
+        izz="8.90711494756351E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/giek.STL" />
+      </geometry>
+       <material
+        name="green">
+       </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/giek.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="giek_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.03825"
+      rpy="0 0 0" />
+    <parent
+      link="bovenwagen" />
+    <child
+      link="giek" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.6766"
+      upper="2.0356"
+      effort="1.4"
+      velocity="12" />
+  </joint>
+   <link
+    name="jib">
+    <inertial>
+      <origin
+        xyz="0.000815066617467204 -0.00435902768749043 -0.0213685033166381"
+        rpy="0 0 0" />
+      <mass
+        value="0.164556373434533" />
+      <inertia
+        ixx="3.91828865332689E-05"
+        ixy="3.52406899634872E-06"
+        ixz="1.50328565683489E-05"
+        iyy="0.000130598094917094"
+        iyz="1.16909345540779E-06"
+        izz="0.000132714791846138" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/jib.STL" />
+      </geometry>
+      <material
+        name="green">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/jib.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jib_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.000100000000000051 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="giek" />
+    <child
+      link="jib" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.2902"
+      upper="2.3731"
+      effort="1.4"
+      velocity="12" />
+  </joint>
+  <link
+    name="adapter_grijper">
+    <inertial>
+      <origin
+        xyz="-0.00498436160970938 -3.00066729439951E-06 -0.0498746377289557"
+        rpy="0 0 0" />
+      <mass
+        value="0.125665683781291" />
+      <inertia
+        ixx="2.37076374272264E-05"
+        ixy="6.31128192789814E-09"
+        ixz="2.35680924332221E-08"
+        iyy="3.02279693874185E-05"
+        iyz="-5.47914720294246E-09"
+        izz="3.46724257499604E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/adapter_grijper.STL" />
+      </geometry>
+      <material
+        name="blue">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/adapter_grijper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="adapter_grijper_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.000100000000000074 0.0899999999999988"
+      rpy="3.14159265358979 0 1.5707963267949" />
+    <parent
+      link="jib" />
+    <child
+      link="adapter_grijper" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5615"
+      upper="1.6597"
+      effort="1.4"
+      velocity="12" />
+  </joint>
+  <link
+    name="camera">
+    <inertial>
+      <origin
+        xyz="4.81694333447497E-05 0.00172986687400556 0.00749962762087741"
+        rpy="0 0 0" />
+      <mass
+        value="0.0482013986778834" />
+      <inertia
+        ixx="2.66521456031403E-05"
+        ixy="7.54926375780155E-09"
+        ixz="-2.11610730860518E-09"
+        iyy="2.73914552602105E-05"
+        iyz="4.25989861649173E-07"
+        izz="3.35061197625396E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/camera.STL" />
+      </geometry>
+      <material
+        name="black">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00749999999999989 0.05435 -0.0282847760722463"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="adapter_grijper" />
+    <child
+      link="camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="grijper">
+    <inertial>
+      <origin
+        xyz="-0.000129801137724195 -0.0500933830009445 -0.00024137357285385"
+        rpy="0 0 0" />
+      <mass
+        value="0.00349329086910066" />
+      <inertia
+        ixx="8.9788151305177E-07"
+        ixy="1.22124395434502E-09"
+        ixz="-3.64283156140804E-07"
+        iyy="1.07324516974803E-06"
+        iyz="2.27099589533178E-09"
+        izz="2.60707169230394E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/grijper.STL" />
+      </geometry>
+      <material
+        name="red">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="${mesh_pad}/grijper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="grijper_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.11203"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="adapter_grijper" />
+    <child
+      link="grijper" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="1.4"
+      velocity="12" />
+  </joint>
+  
+</robot>
