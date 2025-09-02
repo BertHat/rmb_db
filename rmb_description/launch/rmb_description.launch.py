@@ -4,6 +4,8 @@ from launch_ros.actions import Node
 from launch.substitutions import Command
 import os
 from ament_index_python.packages import get_package_share_path
+from launch.actions import IncludeLaunchDescription 
+from launch.launch_description_sources import PythonLaunchDescriptionSource 
 
 def generate_launch_description():
 
@@ -23,7 +25,17 @@ def generate_launch_description():
         executable="joint_state_publisher"
     )
     
+    rplidar_package_share_path = get_package_share_path('rplidar_ros') 
+
+    rplidar_launch_file_path = os.path.join(rplidar_package_share_path, 'launch', 'rplidar_a2m8_launch.py')
+
+    
+    rplidar_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([rplidar_launch_file_path])
+    )
+    
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
+        rplidar_launch, 
     ])
