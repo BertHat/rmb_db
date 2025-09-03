@@ -47,8 +47,8 @@ def generate_launch_description():
         name='static_transform_publisher_rplidar', # Geef het een unieke naam
         output='screen',
         arguments=[
-            '0.0', '0.0', '0.1',  # x, y, z translatie (aanpassen!)
-            '0.0', '0.0', '0.0',  # roll, pitch, yaw rotatie (aanpassen!)
+            '-0.05215', '0.0', '0.0932667954832934',  # x, y, z translatie (aanpassen!)
+            '0.0', '-0.7854', '0.0',  # roll, pitch, yaw rotatie (aanpassen!)
             'base_link',         # parent_frame_id (dit is meestal het basisframe van je robot)
             'laser'              # child_frame_id (dit is het frame van de RPLIDAR-scan)
         ]
