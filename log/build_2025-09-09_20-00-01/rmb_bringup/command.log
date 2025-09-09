@@ -1,0 +1,6 @@
+Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/berth/rmb/src/rmb_db/rmb_bringup -DCMAKE_INSTALL_PREFIX=/home/berth/rmb/src/rmb_db/install/rmb_bringup
+Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/berth/rmb/src/rmb_db/rmb_bringup -DCMAKE_INSTALL_PREFIX=/home/berth/rmb/src/rmb_db/install/rmb_bringup
+Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_bringup -- -j12 -l12
+Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_bringup -- -j12 -l12
+Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_bringup
+Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_bringup

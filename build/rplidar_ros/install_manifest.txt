@@ -1,6 +1,5 @@
-/home/berth/rmb/src/rmb_db/install/rplidar_ros/share/rplidar_ros/launch/__pycache__/rplidar_a2m8_launch.cpython-310.pyc
 /home/berth/rmb/src/rmb_db/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
-/home/berth/rmb/src/rmb_db/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+/home/berth/rmb/src/rmb_db/install/rplidar_ros/share/rplidar_ros/launch/__pycache__/rplidar_a2m8_launch.cpython-310.pyc
 /home/berth/rmb/src/rmb_db/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
 /home/berth/rmb/src/rmb_db/install/rplidar_ros/lib/rplidar_ros/rplidar_node
 /home/berth/rmb/src/rmb_db/install/rplidar_ros/lib/rplidar_ros/rplidar_composition

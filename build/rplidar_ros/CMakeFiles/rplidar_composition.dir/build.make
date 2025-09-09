@@ -420,7 +420,7 @@ rplidar_composition: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.
 rplidar_composition: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rplidar_composition: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rplidar_composition: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+rplidar_composition: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rplidar_composition: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
