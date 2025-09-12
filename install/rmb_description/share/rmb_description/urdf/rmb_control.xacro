@@ -1,41 +1,71 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <ros2_control name="GazeboSimSystem" type="system">
+    <ros2_control name="DynamixelHardware" type="system">
         <hardware>
-            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+            <!-- Vervang de GazeboSimSystem plugin door de DynamixelHardware plugin -->
+            <plugin>dynamixel_hardware/DynamixelHardware</plugin>
+            <param name="usb_port">/dev/ttyUSB0</param> <!-- Pas dit aan naar de juiste USB-poort -->
+            <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->
+            <!-- Voeg hier extra Dynamixel specifieke parameters toe indien nodig,
+                 zoals 'operating_mode' of 'protocol_version' voor elk gewricht.
+                 Voor de XL-340-W250 is Protocol 2.0 gangbaar.
+                 Voor position control: operating_mode=3 (Extended Position Control)
+                 Voor velocity control: operating_mode=1 (Velocity Control)
+            -->
         </hardware>
         <joint name="left_wheel_joint">
-            <command_interface name="velocity"/>
+            <command_interface name="velocity">
+                <param name="id">1</param> <!-- Dynamixel ID voor het linke wiel. Pas aan indien nodig. -->
+                <param name="operating_mode">1</param> <!-- Velocity Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="right_wheel_joint">
-            <command_interface name="velocity"/>
+            <command_interface name="velocity">
+                <param name="id">2</param> <!-- Dynamixel ID voor het rechter wiel. Pas aan indien nodig. -->
+                <param name="operating_mode">1</param> <!-- Velocity Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="bovenwagen_joint">
-            <command_interface name="position"/>
+            <command_interface name="position">
+                <param name="id">3</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
+                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="giek_joint">
-            <command_interface name="position"/>
+            <command_interface name="position">
+                <param name="id">4</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
+                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="jib_joint">
-            <command_interface name="position"/>
+             <command_interface name="position">
+                <param name="id">5</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
+                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="adapter_grijper_joint">
-            <command_interface name="position"/>
+            <command_interface name="position">
+                <param name="id">6</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
+                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="grijper_joint">
-            <command_interface name="position"/>
+             <command_interface name="position">
+                <param name="id">7</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
+                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
@@ -68,16 +98,5 @@
         </joint>
         
     </ros2_control>
-
-         
-    <gazebo>
-            
-       <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-            <parameters>$(find rb_bringup)/config/rb_controllers.yaml</parameters>
-            <joint_states_topic>/dynamic_joint_states</joint_states_topic>
-       </plugin>
-
-    </gazebo>
-
-    
+   
 </robot>

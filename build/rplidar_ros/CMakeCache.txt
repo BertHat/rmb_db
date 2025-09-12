@@ -272,7 +272,7 @@ SITE:STRING=HP-Envy
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libtracetools.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -458,7 +458,7 @@ rplidar_ros_SOURCE_DIR:STATIC=/home/berth/rmb/src/rmb_db/rplidar_ros
 sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for spdlog.
-spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
+spdlog_DIR:PATH=spdlog_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for spdlog_vendor.
 spdlog_vendor_DIR:PATH=/opt/ros/humble/share/spdlog_vendor/cmake

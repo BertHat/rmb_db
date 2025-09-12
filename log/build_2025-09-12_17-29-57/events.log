@@ -1,0 +1,268 @@
+[0.000000] (-) TimerEvent: {}
+[0.001628] (dynamixel_hardware) JobQueued: {'identifier': 'dynamixel_hardware', 'dependencies': OrderedDict()}
+[0.001755] (rmb_bringup) JobQueued: {'identifier': 'rmb_bringup', 'dependencies': OrderedDict()}
+[0.001838] (rmb_description) JobQueued: {'identifier': 'rmb_description', 'dependencies': OrderedDict()}
+[0.001915] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.001991] (dynamixel_hardware) JobStarted: {'identifier': 'dynamixel_hardware'}
+[0.025218] (rmb_bringup) JobStarted: {'identifier': 'rmb_bringup'}
+[0.040340] (rmb_description) JobStarted: {'identifier': 'rmb_description'}
+[0.055912] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.077919] (dynamixel_hardware) JobProgress: {'identifier': 'dynamixel_hardware', 'progress': 'cmake'}
+[0.080885] (dynamixel_hardware) JobProgress: {'identifier': 'dynamixel_hardware', 'progress': 'build'}
+[0.083638] (dynamixel_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware', '--', '-j4', '-l4'], 'cwd': '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.095679] (rmb_bringup) JobProgress: {'identifier': 'rmb_bringup', 'progress': 'cmake'}
+[0.098381] (rmb_bringup) JobProgress: {'identifier': 'rmb_bringup', 'progress': 'build'}
+[0.104703] (rmb_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/berth/rmb/src/rmb_db/build/rmb_bringup', '--', '-j4', '-l4'], 'cwd': '/home/berth/rmb/src/rmb_db/build/rmb_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/rmb_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.111936] (-) TimerEvent: {}
+[0.113097] (rmb_description) JobProgress: {'identifier': 'rmb_description', 'progress': 'cmake'}
+[0.114671] (rmb_description) JobProgress: {'identifier': 'rmb_description', 'progress': 'build'}
+[0.121987] (rmb_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/berth/rmb/src/rmb_db/build/rmb_description', '--', '-j4', '-l4'], 'cwd': '/home/berth/rmb/src/rmb_db/build/rmb_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/rmb_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.162906] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.165826] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.170150] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/berth/rmb/src/rmb_db/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/home/berth/rmb/src/rmb_db/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/rplidar_ros'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.213627] (-) TimerEvent: {}
+[0.253136] (dynamixel_hardware) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.259901] (rmb_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.307264] (rmb_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.313988] (-) TimerEvent: {}
+[0.415705] (-) TimerEvent: {}
+[0.480368] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.516033] (-) TimerEvent: {}
+[0.619047] (-) TimerEvent: {}
+[0.722495] (-) TimerEvent: {}
+[0.826282] (-) TimerEvent: {}
+[0.929103] (-) TimerEvent: {}
+[1.032261] (-) TimerEvent: {}
+[1.135555] (-) TimerEvent: {}
+[1.238377] (-) TimerEvent: {}
+[1.341466] (-) TimerEvent: {}
+[1.444103] (-) TimerEvent: {}
+[1.545900] (-) TimerEvent: {}
+[1.647836] (-) TimerEvent: {}
+[1.749876] (-) TimerEvent: {}
+[1.853043] (-) TimerEvent: {}
+[1.934725] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.936459] (rmb_bringup) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.938787] (rmb_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.953374] (-) TimerEvent: {}
+[2.029809] (rmb_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.053813] (-) TimerEvent: {}
+[2.157897] (-) TimerEvent: {}
+[2.203042] (rplidar_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.245292] (dynamixel_hardware) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):\n'}
+[2.246838] (dynamixel_hardware) StderrLine: {'line': b"  Package 'rcutils' exports library 'dl' which couldn't be found\n"}
+[2.248096] (dynamixel_hardware) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.249175] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[2.250202] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.251210] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[2.252300] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.253177] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[2.254066] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.267297] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[2.268610] (-) TimerEvent: {}
+[2.269717] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.270918] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[2.272149] (dynamixel_hardware) StderrLine: {'line': b'  CMakeLists.txt:20 (find_package)\n'}
+[2.273165] (dynamixel_hardware) StderrLine: {'line': b'\n'}
+[2.274240] (dynamixel_hardware) StderrLine: {'line': b'\x1b[0m\n'}
+[2.368970] (-) TimerEvent: {}
+[2.371074] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.408126] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.469357] (-) TimerEvent: {}
+[2.490381] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.525557] (rplidar_ros) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):\n'}
+[2.527715] (rplidar_ros) StderrLine: {'line': b"  Package 'rcutils' exports library 'dl' which couldn't be found\n"}
+[2.528786] (rplidar_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.529805] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[2.530742] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.531845] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[2.534018] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.544511] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[2.545667] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.546802] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[2.547952] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[2.549078] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[2.550169] (rplidar_ros) StderrLine: {'line': b'  CMakeLists.txt:44 (find_package)\n'}
+[2.551456] (rplidar_ros) StderrLine: {'line': b'\n'}
+[2.552597] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[2.569697] (-) TimerEvent: {}
+[2.641202] (dynamixel_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.670113] (-) TimerEvent: {}
+[2.690274] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.731465] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.770588] (-) TimerEvent: {}
+[2.822693] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.829372] (rmb_bringup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.835989] (rmb_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.841319] (rmb_bringup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.858487] (rmb_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.864099] (dynamixel_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.869925] (rmb_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.871360] (-) TimerEvent: {}
+[2.920009] (rmb_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[2.939531] (rmb_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.946071] (rmb_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/berth/rmb/src/rmb_db/build/rmb_bringup\n'}
+[2.954911] (rmb_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.964498] (rmb_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.971688] (-) TimerEvent: {}
+[2.977869] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.008630] (rmb_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.023905] (rmb_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.072016] (-) TimerEvent: {}
+[3.084443] (rmb_description) StdoutLine: {'line': b'-- Generating done\n'}
+[3.112255] (rmb_description) StdoutLine: {'line': b'-- Build files have been written to: /home/berth/rmb/src/rmb_db/build/rmb_description\n'}
+[3.132245] (rmb_bringup) CommandEnded: {'returncode': 0}
+[3.172416] (-) TimerEvent: {}
+[3.202131] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.272734] (-) TimerEvent: {}
+[3.320058] (rmb_description) CommandEnded: {'returncode': 0}
+[3.373053] (-) TimerEvent: {}
+[3.419598] (rmb_bringup) JobProgress: {'identifier': 'rmb_bringup', 'progress': 'install'}
+[3.476592] (rmb_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/berth/rmb/src/rmb_db/build/rmb_bringup'], 'cwd': '/home/berth/rmb/src/rmb_db/build/rmb_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/rmb_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.478150] (-) TimerEvent: {}
+[3.502013] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.508565] (rmb_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.509754] (dynamixel_hardware) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.511922] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/launch\n'}
+[3.513743] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/launch/rmb_bringup.launch.py\n'}
+[3.515778] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/config\n'}
+[3.516391] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/config/rb_controllers.yaml\n'}
+[3.517258] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/ament_index/resource_index/package_run_dependencies/rmb_bringup\n'}
+[3.517830] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/ament_index/resource_index/parent_prefix_path/rmb_bringup\n'}
+[3.527415] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/environment/ament_prefix_path.sh\n'}
+[3.528049] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/environment/ament_prefix_path.dsv\n'}
+[3.528597] (rmb_description) JobProgress: {'identifier': 'rmb_description', 'progress': 'install'}
+[3.528744] (rmb_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/berth/rmb/src/rmb_db/build/rmb_description'], 'cwd': '/home/berth/rmb/src/rmb_db/build/rmb_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'berth'), ('SSH_CLIENT', '192.168.0.101 52092 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/berth'), ('OLDPWD', '/home/berth/rmb'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'berth'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/berth/rmb/src/rmb_db/build/rmb_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.101 52092 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.530490] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/environment/path.sh\n'}
+[3.531626] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/environment/path.dsv\n'}
+[3.532325] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/local_setup.bash\n'}
+[3.532985] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/local_setup.sh\n'}
+[3.533590] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/local_setup.zsh\n'}
+[3.534323] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/local_setup.dsv\n'}
+[3.535022] (rmb_bringup) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.dsv\n'}
+[3.536470] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/ament_index/resource_index/packages/rmb_bringup\n'}
+[3.536875] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/cmake/rmb_bringupConfig.cmake\n'}
+[3.537215] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/cmake/rmb_bringupConfig-version.cmake\n'}
+[3.537537] (rmb_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.xml\n'}
+[3.551956] (rmb_bringup) CommandEnded: {'returncode': 0}
+[3.578742] (-) TimerEvent: {}
+[3.617699] (rmb_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.619419] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/urdf\n'}
+[3.620903] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/urdf/rmb.xacro.urdf\n'}
+[3.625953] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/urdf/rmb_description.urdf.xacro\n'}
+[3.627624] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/urdf/rmb_materials.xacro\n'}
+[3.628672] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/urdf/rmb_control.xacro\n'}
+[3.630132] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes\n'}
+[3.631619] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/bovenwagen.STL\n'}
+[3.632940] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/giek.STL\n'}
+[3.634322] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/lidar.STL\n'}
+[3.636220] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/base_link_breed.STL\n'}
+[3.637771] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/wiel_rechts.STL\n'}
+[3.639612] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/kogel_caster_achter.STL\n'}
+[3.641085] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/kogel_caster_voor.STL\n'}
+[3.651525] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/adapter_grijper.STL\n'}
+[3.652932] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/camera.STL\n'}
+[3.654025] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/grijper.STL\n'}
+[3.655175] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/jib.STL\n'}
+[3.656196] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/meshes/wiel_links.STL\n'}
+[3.657570] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/launch\n'}
+[3.659111] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/launch/rmb_description.launch.py\n'}
+[3.663981] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/ament_index/resource_index/package_run_dependencies/rmb_description\n'}
+[3.665517] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/ament_index/resource_index/parent_prefix_path/rmb_description\n'}
+[3.666544] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/environment/ament_prefix_path.sh\n'}
+[3.667658] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/environment/ament_prefix_path.dsv\n'}
+[3.682505] (-) TimerEvent: {}
+[3.684533] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/environment/path.sh\n'}
+[3.686377] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/environment/path.dsv\n'}
+[3.687622] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/local_setup.bash\n'}
+[3.689037] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/local_setup.sh\n'}
+[3.690236] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/local_setup.zsh\n'}
+[3.691517] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/local_setup.dsv\n'}
+[3.692901] (rmb_description) StdoutLine: {'line': b'-- Installing: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.dsv\n'}
+[3.696106] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/ament_index/resource_index/packages/rmb_description\n'}
+[3.698753] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/cmake/rmb_descriptionConfig.cmake\n'}
+[3.700952] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/cmake/rmb_descriptionConfig-version.cmake\n'}
+[3.707672] (rmb_description) StdoutLine: {'line': b'-- Up-to-date: /home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.xml\n'}
+[3.738718] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.750744] (rmb_description) CommandEnded: {'returncode': 0}
+[3.757433] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.783080] (-) TimerEvent: {}
+[3.886043] (-) TimerEvent: {}
+[3.987868] (-) TimerEvent: {}
+[4.055416] (rmb_bringup) JobEnded: {'identifier': 'rmb_bringup', 'rc': 0}
+[4.088120] (-) TimerEvent: {}
+[4.166747] (rmb_description) JobEnded: {'identifier': 'rmb_description', 'rc': 0}
+[4.188397] (-) TimerEvent: {}
+[4.290276] (-) TimerEvent: {}
+[4.391697] (-) TimerEvent: {}
+[4.493172] (-) TimerEvent: {}
+[4.565018] (dynamixel_hardware) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.593438] (-) TimerEvent: {}
+[4.691636] (dynamixel_hardware) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):\n'}
+[4.692940] (dynamixel_hardware) StderrLine: {'line': b'  By not providing "Findspdlog.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[4.693913] (-) TimerEvent: {}
+[4.696330] (dynamixel_hardware) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "spdlog", but\n'}
+[4.697433] (dynamixel_hardware) StderrLine: {'line': b'  CMake did not find one.\n'}
+[4.698366] (dynamixel_hardware) StderrLine: {'line': b'\n'}
+[4.699416] (dynamixel_hardware) StderrLine: {'line': b'  Could not find a package configuration file provided by "spdlog" with any\n'}
+[4.700334] (dynamixel_hardware) StderrLine: {'line': b'  of the following names:\n'}
+[4.701219] (dynamixel_hardware) StderrLine: {'line': b'\n'}
+[4.702154] (dynamixel_hardware) StderrLine: {'line': b'    spdlogConfig.cmake\n'}
+[4.703121] (dynamixel_hardware) StderrLine: {'line': b'    spdlog-config.cmake\n'}
+[4.704117] (dynamixel_hardware) StderrLine: {'line': b'\n'}
+[4.705023] (dynamixel_hardware) StderrLine: {'line': b'  Add the installation prefix of "spdlog" to CMAKE_PREFIX_PATH or set\n'}
+[4.706093] (dynamixel_hardware) StderrLine: {'line': b'  "spdlog_DIR" to a directory containing one of the above files.  If "spdlog"\n'}
+[4.707307] (dynamixel_hardware) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[4.708544] (dynamixel_hardware) StderrLine: {'line': b'  installed.\n'}
+[4.709541] (dynamixel_hardware) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.710532] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)\n'}
+[4.712111] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.713746] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rcl/cmake/rclConfig.cmake:41 (include)\n'}
+[4.715526] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.717418] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[4.719346] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.720738] (dynamixel_hardware) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[4.721822] (dynamixel_hardware) StderrLine: {'line': b'  CMakeLists.txt:20 (find_package)\n'}
+[4.722963] (dynamixel_hardware) StderrLine: {'line': b'\n'}
+[4.724359] (dynamixel_hardware) StderrLine: {'line': b'\x1b[0m\n'}
+[4.725470] (dynamixel_hardware) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.726365] (dynamixel_hardware) StdoutLine: {'line': b'See also "/home/berth/rmb/src/rmb_db/build/dynamixel_hardware/CMakeFiles/CMakeOutput.log".\n'}
+[4.736266] (dynamixel_hardware) StderrLine: {'line': b'gmake: *** [Makefile:267: cmake_check_build_system] Error 1\n'}
+[4.749780] (dynamixel_hardware) CommandEnded: {'returncode': 2}
+[4.794287] (-) TimerEvent: {}
+[4.851418] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.894647] (-) TimerEvent: {}
+[4.979117] (rplidar_ros) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):\n'}
+[4.981244] (rplidar_ros) StderrLine: {'line': b'  By not providing "Findspdlog.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[4.982245] (rplidar_ros) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "spdlog", but\n'}
+[4.983229] (rplidar_ros) StderrLine: {'line': b'  CMake did not find one.\n'}
+[4.984110] (rplidar_ros) StderrLine: {'line': b'\n'}
+[4.984986] (rplidar_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "spdlog" with any\n'}
+[4.985882] (rplidar_ros) StderrLine: {'line': b'  of the following names:\n'}
+[4.986733] (rplidar_ros) StderrLine: {'line': b'\n'}
+[4.987750] (rplidar_ros) StderrLine: {'line': b'    spdlogConfig.cmake\n'}
+[4.988876] (rplidar_ros) StderrLine: {'line': b'    spdlog-config.cmake\n'}
+[4.989966] (rplidar_ros) StderrLine: {'line': b'\n'}
+[4.992488] (rplidar_ros) StderrLine: {'line': b'  Add the installation prefix of "spdlog" to CMAKE_PREFIX_PATH or set\n'}
+[4.993541] (rplidar_ros) StderrLine: {'line': b'  "spdlog_DIR" to a directory containing one of the above files.  If "spdlog"\n'}
+[4.994580] (rplidar_ros) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[4.995751] (-) TimerEvent: {}
+[4.996777] (rplidar_ros) StderrLine: {'line': b'  installed.\n'}
+[4.998658] (rplidar_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.000718] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)\n'}
+[5.004329] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[5.006375] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rcl/cmake/rclConfig.cmake:41 (include)\n'}
+[5.008269] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[5.009645] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[5.011269] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[5.012906] (rplidar_ros) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[5.014502] (rplidar_ros) StderrLine: {'line': b'  CMakeLists.txt:44 (find_package)\n'}
+[5.017601] (rplidar_ros) StderrLine: {'line': b'\n'}
+[5.025928] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[5.029969] (rplidar_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.031963] (rplidar_ros) StdoutLine: {'line': b'See also "/home/berth/rmb/src/rmb_db/build/rplidar_ros/CMakeFiles/CMakeOutput.log".\n'}
+[5.033728] (rplidar_ros) StderrLine: {'line': b'gmake: *** [Makefile:805: cmake_check_build_system] Error 1\n'}
+[5.097535] (-) TimerEvent: {}
+[5.117212] (dynamixel_hardware) JobEnded: {'identifier': 'dynamixel_hardware', 'rc': 2}
+[5.125903] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 'SIGINT'}
+[5.138342] (-) EventReactorShutdown: {}

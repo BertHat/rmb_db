@@ -1,0 +1,261 @@
+[0.429s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.430s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff99a43250>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff99b7f910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff99b7f910>>, mixin_verb=('build',))
+[1.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.067s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/berth/rmb/src/rmb_db'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extension 'ignore'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extension 'ignore_ament_install'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extensions ['colcon_pkg']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extension 'colcon_pkg'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extensions ['colcon_meta']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extension 'colcon_meta'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extensions ['ros']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(dynamixel_hardware) by extension 'ros'
+[1.126s] DEBUG:colcon.colcon_core.package_identification:Package 'dynamixel_hardware' with type 'ros.ament_cmake' and name 'dynamixel_hardware'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extension 'ignore'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extension 'ignore_ament_install'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extensions ['colcon_pkg']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extension 'colcon_pkg'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extensions ['colcon_meta']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extension 'colcon_meta'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extensions ['ros']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_bringup) by extension 'ros'
+[1.132s] DEBUG:colcon.colcon_core.package_identification:Package 'rmb_bringup' with type 'ros.ament_cmake' and name 'rmb_bringup'
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extensions ['ignore', 'ignore_ament_install']
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extension 'ignore'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extension 'ignore_ament_install'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extensions ['colcon_pkg']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extension 'colcon_pkg'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extensions ['colcon_meta']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extension 'colcon_meta'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extensions ['ros']
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(rmb_description) by extension 'ros'
+[1.136s] DEBUG:colcon.colcon_core.package_identification:Package 'rmb_description' with type 'ros.ament_cmake' and name 'rmb_description'
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ignore'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ignore_ament_install'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['colcon_pkg']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'colcon_pkg'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['colcon_meta']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'colcon_meta'
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extensions ['ros']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(rplidar_ros) by extension 'ros'
+[1.141s] DEBUG:colcon.colcon_core.package_identification:Package 'rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[1.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.234s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 225 installed packages in /opt/ros/humble
+[1.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_args' from command line to 'None'
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_target' from command line to 'None'
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[1.402s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[1.403s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[1.403s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[1.403s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[1.403s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.403s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware', 'merge_install': False, 'path': '/home/berth/rmb/src/rmb_db/dynamixel_hardware', 'symlink_install': False, 'test_result_base': None}
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_target' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'rmb_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.405s] DEBUG:colcon.colcon_core.verb:Building package 'rmb_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/berth/rmb/src/rmb_db/build/rmb_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/berth/rmb/src/rmb_db/install/rmb_bringup', 'merge_install': False, 'path': '/home/berth/rmb/src/rmb_db/rmb_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_args' from command line to 'None'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_target' from command line to 'None'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.407s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.408s] Level 5:colcon.colcon_core.verb:set package 'rmb_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.408s] DEBUG:colcon.colcon_core.verb:Building package 'rmb_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/berth/rmb/src/rmb_db/build/rmb_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/berth/rmb/src/rmb_db/install/rmb_description', 'merge_install': False, 'path': '/home/berth/rmb/src/rmb_db/rmb_description', 'symlink_install': False, 'test_result_base': None}
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[1.409s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.410s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/berth/rmb/src/rmb_db/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/berth/rmb/src/rmb_db/install/rplidar_ros', 'merge_install': False, 'path': '/home/berth/rmb/src/rmb_db/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[1.411s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.415s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/berth/rmb/src/rmb_db/dynamixel_hardware' with build type 'ament_cmake'
+[1.416s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/berth/rmb/src/rmb_db/dynamixel_hardware'
+[1.424s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.439s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/berth/rmb/src/rmb_db/rmb_bringup' with build type 'ament_cmake'
+[1.439s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/berth/rmb/src/rmb_db/rmb_bringup'
+[1.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.454s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/berth/rmb/src/rmb_db/rmb_description' with build type 'ament_cmake'
+[1.454s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/berth/rmb/src/rmb_db/rmb_description'
+[1.456s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.456s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/berth/rmb/src/rmb_db/rplidar_ros' with build type 'ament_cmake'
+[1.470s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/berth/rmb/src/rmb_db/rplidar_ros'
+[1.471s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/dynamixel_hardware -- -j4 -l4
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_bringup -- -j4 -l4
+[1.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_description -- -j4 -l4
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rplidar_ros -- -j4 -l4
+[4.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_bringup -- -j4 -l4
+[4.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/rmb_description -- -j4 -l4
+[4.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_bringup
+[4.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berth/rmb/src/rmb_db/build/rmb_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_description
+[4.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmb_bringup)
+[4.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_bringup
+[4.982s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup' for CMake module files
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup' for CMake config files
+[4.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmb_bringup', 'cmake_prefix_path')
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.ps1'
+[5.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.dsv'
+[5.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.sh'
+[5.023s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/bin'
+[5.024s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/lib/pkgconfig/rmb_bringup.pc'
+[5.028s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/lib/python3.10/site-packages'
+[5.030s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/bin'
+[5.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.ps1'
+[5.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.dsv'
+[5.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.sh'
+[5.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.bash'
+[5.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.zsh'
+[5.132s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/colcon-core/packages/rmb_bringup)
+[5.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmb_description)
+[5.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berth/rmb/src/rmb_db/build/rmb_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/berth/rmb/src/rmb_db/build/rmb_description
+[5.170s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description' for CMake module files
+[5.182s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description' for CMake config files
+[5.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmb_description', 'cmake_prefix_path')
+[5.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.ps1'
+[5.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.dsv'
+[5.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.sh'
+[5.210s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/bin'
+[5.211s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/lib/pkgconfig/rmb_description.pc'
+[5.214s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/lib/python3.10/site-packages'
+[5.216s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/bin'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.ps1'
+[5.226s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.dsv'
+[5.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.sh'
+[5.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.bash'
+[5.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.zsh'
+[5.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berth/rmb/src/rmb_db/install/rmb_description/share/colcon-core/packages/rmb_description)
+[5.394s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmb_bringup)
+[5.396s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup' for CMake module files
+[5.407s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup' for CMake config files
+[5.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmb_bringup', 'cmake_prefix_path')
+[5.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.ps1'
+[5.419s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.dsv'
+[5.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/hook/cmake_prefix_path.sh'
+[5.431s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/bin'
+[5.431s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/lib/pkgconfig/rmb_bringup.pc'
+[5.434s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/lib/python3.10/site-packages'
+[5.437s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_bringup/bin'
+[5.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.ps1'
+[5.445s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.dsv'
+[5.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.sh'
+[5.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.bash'
+[5.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/rmb_bringup/package.zsh'
+[5.466s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berth/rmb/src/rmb_db/install/rmb_bringup/share/colcon-core/packages/rmb_bringup)
+[5.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmb_description)
+[5.511s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description' for CMake module files
+[5.519s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description' for CMake config files
+[5.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmb_description', 'cmake_prefix_path')
+[5.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.ps1'
+[5.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.dsv'
+[5.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/hook/cmake_prefix_path.sh'
+[5.543s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/bin'
+[5.544s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/lib/pkgconfig/rmb_description.pc'
+[5.546s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/lib/python3.10/site-packages'
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/rmb_description/bin'
+[5.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.ps1'
+[5.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.dsv'
+[5.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.sh'
+[5.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.bash'
+[5.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/rmb_description/share/rmb_description/package.zsh'
+[5.578s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berth/rmb/src/rmb_db/install/rmb_description/share/colcon-core/packages/rmb_description)
+[6.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berth/rmb/src/rmb_db/build/dynamixel_hardware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/berth/rmb/src/rmb_db/build/dynamixel_hardware -- -j4 -l4
+[6.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_hardware)
+[6.439s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware' for CMake module files
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware' for CMake config files
+[6.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'cmake_prefix_path')
+[6.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.ps1'
+[6.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.dsv'
+[6.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.sh'
+[6.477s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/lib'
+[6.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'ld_library_path_lib')
+[6.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.ps1'
+[6.485s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.dsv'
+[6.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.sh'
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/bin'
+[6.494s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/lib/pkgconfig/dynamixel_hardware.pc'
+[6.496s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/lib/python3.10/site-packages'
+[6.498s] Level 1:colcon.colcon_core.environment:checking '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/bin'
+[6.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/package.ps1'
+[6.507s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/package.dsv'
+[6.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/package.sh'
+[6.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/package.bash'
+[6.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/dynamixel_hardware/package.zsh'
+[6.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berth/rmb/src/rmb_db/install/dynamixel_hardware/share/colcon-core/packages/dynamixel_hardware)
+[6.549s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.550s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.551s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[6.551s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.597s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.598s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.599s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.599s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.606s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.607s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.609s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berth/rmb/src/rmb_db/install/local_setup.ps1'
+[6.618s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/berth/rmb/src/rmb_db/install/_local_setup_util_ps1.py'
+[6.632s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berth/rmb/src/rmb_db/install/setup.ps1'
+[6.641s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berth/rmb/src/rmb_db/install/local_setup.sh'
+[6.647s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/berth/rmb/src/rmb_db/install/_local_setup_util_sh.py'
+[6.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berth/rmb/src/rmb_db/install/setup.sh'
+[6.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berth/rmb/src/rmb_db/install/local_setup.bash'
+[6.667s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berth/rmb/src/rmb_db/install/setup.bash'
+[6.677s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berth/rmb/src/rmb_db/install/local_setup.zsh'
+[6.682s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berth/rmb/src/rmb_db/install/setup.zsh'
