@@ -21,10 +21,10 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description}]
     )
 
-    #joint_state_publisher_node = Node(
-    #    package="joint_state_publisher",
-    #    executable="joint_state_publisher"
-    #)
+    joint_state_publisher_node = Node(
+        package="joint_state_publisher",
+        executable="joint_state_publisher"
+    )
 
      # Controller Manager Spawners
     joint_state_broadcaster_spawner = Node(
@@ -79,6 +79,7 @@ def generate_launch_description():
         robot_state_publisher_node,
         rplidar_launch,
         static_tf_publisher_lidar_node,
+        joint_state_publisher_node,
         RegisterEventHandler(
             event_handler=OnProcessExit(
                 target_action=joint_state_broadcaster_spawner,
