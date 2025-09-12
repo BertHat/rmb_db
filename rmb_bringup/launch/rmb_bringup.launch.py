@@ -8,6 +8,9 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, RegisterEventHandler
 from launch.event_handlers import OnProcessExit
+from ament_index_python.packages import get_package_share_path, get_package_share_directory
+from launch.event_handlers import OnProcessExit, OnProcessStart
+
 def generate_launch_description():
 
     urdf_path = os.path.join(get_package_share_path('rmb_description'),
@@ -15,15 +18,34 @@ def generate_launch_description():
     
     robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
 
+    controller_config_file = os.path.join(
+        get_package_share_directory('rmb_bringup'), # Of welk pakket je controllers definieert
+        'config',
+        'rmb_controllers.yaml' # De naam van je controller configuratiebestand
+    )
+
+
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         parameters=[{'robot_description': robot_description}]
     )
 
-    joint_state_publisher_node = Node(
-        package="joint_state_publisher",
-        executable="joint_state_publisher"
+    #joint_state_publisher_node = Node(
+    #    package="joint_state_publisher",
+    #    executable="joint_state_publisher"
+    #)
+
+    # NIEUW: De ROS2 Controller Manager Node zelf
+    controller_manager_node = Node(
+        package='controller_manager',
+        executable='ros2_controller_manager',
+        parameters=[controller_config_file], # Laad je controller configuratie hier
+        output='screen',
+        # Optioneel: remapping als je robot_description niet op de standaardplek staat
+        remappings=[
+            ('/controller_manager/robot_description', '/robot_description')
+        ]
     )
 
      # Controller Manager Spawners
@@ -73,13 +95,31 @@ def generate_launch_description():
             'laser'              # child_frame_id (dit is het frame van de RPLIDAR-scan)
         ]
     )
-    # =======================================================
-    
+   # ==== Launch Description Assemblage ====
     return LaunchDescription([
+        # Start direct de benodigde nodes voor robotbeschrijving en lidar
         robot_state_publisher_node,
+        #joint_state_publisher_node, # Overweeg deze te verwijderen als je joint_state_broadcaster gebruikt
         rplidar_launch,
         static_tf_publisher_lidar_node,
-        joint_state_publisher_node,
+        
+        # STARTVOLGORDE VOOR CONTROLLERS:
+        # 1. Start de Controller Manager nadat de robot_state_publisher actief is.
+        #    Dit zorgt ervoor dat de manager de robotbeschrijving kan oppikken.
+        RegisterEventHandler(
+            event_handler=OnProcessStart( # Gebruik OnProcessStart voor de manager
+                target_action=robot_state_publisher_node, # Trigger op de RSP node
+                on_start=[controller_manager_node],
+            )
+        ),
+        # 2. Start de Joint State Broadcaster spawner nadat de Controller Manager is gestart.
+        RegisterEventHandler(
+            event_handler=OnProcessStart(
+                target_action=controller_manager_node,
+                on_start=[joint_state_broadcaster_spawner],
+            )
+        ),
+        # 3. Start de andere controllers nadat de Joint State Broadcaster succesvol is gespawnd.
         RegisterEventHandler(
             event_handler=OnProcessExit(
                 target_action=joint_state_broadcaster_spawner,
@@ -90,3 +130,6 @@ def generate_launch_description():
             )
         ),
     ])
+
+  
+
