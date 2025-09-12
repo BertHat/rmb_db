@@ -84,9 +84,7 @@ joint_trajectory_controller:
       - position
       - velocity
 
-    # === DE WIJZIGINGEN ZIJN HIER ===
-    
-    # 1. Sta commando's toe die niet alle joints specificeren (maakt het robuuster)
+   # 1. Sta commando's toe die niet alle joints specificeren (maakt het robuuster)
     allow_partial_joints_goal: true
     
     # 2. Stel de publicatiefrequentie voor de interne staat in.
@@ -95,18 +93,57 @@ joint_trajectory_controller:
 
     # 3. Voeg toleranties toe. Dit helpt de controller te bepalen wanneer een doel is bereikt.
     goal_tolerances:
-      bovenwagen_joint: 0.01
-      giek_joint: 0.01
-      jib_joint: 0.01
-      adapter_grijper_joint: 0.01
-      grijper_joint: 0.01
+      bovenwagen_joint:
+        position: 0.01
+        velocity: 0.1 # Optioneel, voeg ook velocity tolerantie toe voor betere controle
+      giek_joint:
+        position: 0.01
+        velocity: 0.1
+      jib_joint:
+        position: 0.01
+        velocity: 0.1
+      adapter_grijper_joint:
+        position: 0.01
+        velocity: 0.1
+      grijper_joint:
+        position: 0.01
+        velocity: 0.1
     
+    # PID-waarden voor elk gewricht. Deze zijn cruciaal en moeten mogelijk worden getuned.
     gains:
       bovenwagen_joint:      {p: 10.0, i: 0.0, d: 1.0}
       giek_joint:            {p: 10.0, i: 0.0, d: 1.0}
       jib_joint:             {p: 10.0, i: 0.0, d: 1.0}
       adapter_grijper_joint: {p: 5.0,  i: 0.0, d: 0.5}
       grijper_joint:         {p: 5.0,  i: 0.0, d: 0.5}
+
+    # Optioneel: Limieten voor snelheid en acceleratie in de joint_trajectory_controller
+    # Dit voorkomt te snelle of abrupte bewegingen, vooral belangrijk bij hardware.
+    # Je moet deze waarden zorgvuldig kiezen op basis van de fysieke limieten van je robotarm.
+    constraints:
+      bovenwagen_joint:
+        trajectory: 0.1 # Maximale afwijking van de trajectoire
+        goal: 0.1       # Maximale afwijking van het einddoel
+      giek_joint:
+        trajectory: 0.1
+        goal: 0.1
+      jib_joint:
+        trajectory: 0.1
+        goal: 0.1
+      adapter_grijper_joint:
+        trajectory: 0.1
+        goal: 0.1
+      grijper_joint:
+        trajectory: 0.1
+        goal: 0.1
+
+    # Voeg ook max_velocity en max_acceleration toe voor elk gewricht als je hier limieten op wilt hebben
+    # Example for 'bovenwagen_joint':
+    # bovenwagen_joint:
+    #   max_velocity: 1.5 # rad/s
+    #   max_acceleration: 3.0 # rad/s^2
+    
+    
     
    
 

@@ -6,7 +6,8 @@ import os
 from ament_index_python.packages import get_package_share_path
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 def generate_launch_description():
 
     urdf_path = os.path.join(get_package_share_path('rmb_description'),
@@ -20,9 +21,28 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description}]
     )
 
-    joint_state_publisher_node = Node(
-        package="joint_state_publisher",
-        executable="joint_state_publisher"
+    #joint_state_publisher_node = Node(
+    #    package="joint_state_publisher",
+    #    executable="joint_state_publisher"
+    #)
+
+     # Controller Manager Spawners
+    joint_state_broadcaster_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['joint_state_broadcaster', '--controller-manager', '/controller_manager'],
+    )
+
+    diff_drive_base_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['diff_drive_base_controller', '--controller-manager', '/controller_manager'],
+    )
+
+    joint_trajectory_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['joint_trajectory_controller', '--controller-manager', '/controller_manager'],
     )
    
     rplidar_package_share_path = get_package_share_path('rplidar_ros') 
@@ -57,7 +77,15 @@ def generate_launch_description():
     
     return LaunchDescription([
         robot_state_publisher_node,
-        joint_state_publisher_node,
         rplidar_launch,
-        static_tf_publisher_lidar_node, 
+        static_tf_publisher_lidar_node,
+        RegisterEventHandler(
+            event_handler=OnProcessExit(
+                target_action=joint_state_broadcaster_spawner,
+                on_exit=[
+                    diff_drive_base_controller_spawner,
+                    joint_trajectory_controller_spawner
+                ],
+            )
+        ),
     ])
