@@ -6,6 +6,7 @@
             <plugin>dynamixel_hardware/DynamixelHardware</plugin>
             <param name="usb_port">/dev/ttyUSB0</param> <!-- Pas dit aan naar de juiste USB-poort -->
             <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->
+            <param name="protocol_version">2.0</param> 
             <!-- Voeg hier extra Dynamixel specifieke parameters toe indien nodig,
                  zoals 'operating_mode' of 'protocol_version' voor elk gewricht.
                  Voor de XL-340-W250 is Protocol 2.0 gangbaar.
