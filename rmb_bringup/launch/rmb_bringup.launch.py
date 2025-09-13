@@ -39,7 +39,7 @@ def generate_launch_description():
     # NIEUW: De ROS2 Controller Manager Node zelf
     controller_manager_node = Node(
         package='controller_manager',
-        executable='ros2_controller_manager',
+        executable='ros2_control_node',
         parameters=[controller_config_file], # Laad je controller configuratie hier
         output='screen',
         # Optioneel: remapping als je robot_description niet op de standaardplek staat
