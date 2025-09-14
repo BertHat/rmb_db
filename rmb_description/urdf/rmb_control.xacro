@@ -4,7 +4,7 @@
         <hardware>
             <!-- Vervang de GazeboSimSystem plugin door de DynamixelHardware plugin -->
             <plugin>dynamixel_hardware/DynamixelHardware</plugin>
-            <param name="usb_port">/dev/ttyUSB0</param> <!-- Pas dit aan naar de juiste USB-poort -->
+            <param name="usb_port">/dev/ttyAMA0</param> <!-- Pas dit aan naar de juiste USB-poort -->
             <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->
             <param name="protocol_version">2.0</param> 
             <!-- Voeg hier extra Dynamixel specifieke parameters toe indien nodig,
