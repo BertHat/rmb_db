@@ -1,18 +1,14 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <ros2_control name="DynamixelHardware" type="system">
+    <ros2_control name="RobotBertManupilator" type="system">
         <hardware>
-            <!-- Vervang de GazeboSimSystem plugin door de DynamixelHardware plugin -->
-            <plugin>dynamixel_hardware_interface/DynamixelHardwareInterface</plugin>
+            <plugin>interbotix_ros_hardware_interface/InterbotixHardwareInterface</plugin>
             <param name="usb_port">/dev/ttyAMA0</param> <!-- Pas dit aan naar de juiste USB-poort -->
             <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->
             <param name="protocol_version">2.0</param> 
-            <!-- Voeg hier extra Dynamixel specifieke parameters toe indien nodig,
-                 zoals 'operating_mode' of 'protocol_version' voor elk gewricht.
-                 Voor de XL-340-W250 is Protocol 2.0 gangbaar.
-                 Voor position control: operating_mode=3 (Extended Position Control)
-                 Voor velocity control: operating_mode=1 (Velocity Control)
-            -->
+            <param name="num_joints">7</param>
+            <param name="robot_model">rmb</param>
+            <param name="motor_configs">$(find rmb_bringup)/config/motor_configs.yaml</param> 
         </hardware>
         <joint name="left_wheel_joint">
             <command_interface name="velocity">
