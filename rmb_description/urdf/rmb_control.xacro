@@ -2,67 +2,77 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <ros2_control name="RobotBertManupilator" type="system">
         <hardware>
-            <plugin>interbotix_ros_hardware_interface/InterbotixHardwareInterface</plugin>
+            <plugin>dynamixel_ros2_control/DynamixelHardwareInterface</plugin>
             <param name="usb_port">/dev/ttyAMA0</param> <!-- Pas dit aan naar de juiste USB-poort -->
-            <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->
-            <param name="protocol_version">2.0</param> 
-            <param name="num_joints">7</param>
-            <param name="robot_model">rmb</param>
-            <param name="motor_configs">$(find rmb_bringup)/config/motor_configs.yaml</param> 
+            <param name="baud_rate">57600</param> <!-- Pas dit aan naar de baudrate van je Dynamixels -->   
         </hardware>
         <joint name="left_wheel_joint">
-            <command_interface name="velocity">
-                <param name="id">1</param> <!-- Dynamixel ID voor het linke wiel. Pas aan indien nodig. -->
-                <param name="operating_mode">1</param> <!-- Velocity Control Mode -->
-            </command_interface>
+            <param name="id">1</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="velocity"/>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="right_wheel_joint">
-            <command_interface name="velocity">
-                <param name="id">2</param> <!-- Dynamixel ID voor het rechter wiel. Pas aan indien nodig. -->
-                <param name="operating_mode">1</param> <!-- Velocity Control Mode -->
-            </command_interface>
+            <param name="id">2</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="velocity"/>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="bovenwagen_joint">
-            <command_interface name="position">
-                <param name="id">3</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
-                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
-            </command_interface>
+            <param name="id">3</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="position"/>           
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="giek_joint">
-            <command_interface name="position">
-                <param name="id">4</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
-                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
-            </command_interface>
+            <param name="id">4</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="position"/>           
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="jib_joint">
-             <command_interface name="position">
-                <param name="id">5</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
-                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
-            </command_interface>
+            <param name="id">5</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="position"/>           
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="adapter_grijper_joint">
-            <command_interface name="position">
-                <param name="id">6</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
-                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
-            </command_interface>
+            <param name="id">6</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="position"/>           
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
         <joint name="grijper_joint">
-             <command_interface name="position">
-                <param name="id">7</param> <!-- Dynamixel ID. Pas aan indien nodig. -->
-                <param name="operating_mode">3</param> <!-- Extended Position Control Mode -->
-            </command_interface>
+            <param name="id">7</param>
+            <param name="p_gain">1120.0</param>
+            <param name="i_gain">170.0</param>
+            <param name="d_gain">3600.0</param>   
+            <!--param name="reboot_on_error">true</param-->
+            <command_interface name="position"/>           
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
