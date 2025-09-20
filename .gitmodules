@@ -4,3 +4,6 @@
 [submodule "DynamixelSDK"]
 	path = DynamixelSDK
 	url = https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+[submodule "dynamixel_ros2_control"]
+	path = dynamixel_ros2_control
+	url = https://github.com/Schnilz/dynamixel_ros2_control.git
